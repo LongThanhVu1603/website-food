@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        padding: 40px 100px;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10000;
+        transition: 0.5s;
+    }
+
+    header .logo{
+        color: #fff;
+        font-weight: 700;
+        font-size: 2em;
+        text-decoration: none;
+    }
+
+    header span{
+        color: #ff0157;
+    }
+
+    header .nav {
+        display: flex;
+    }
+
+    header .nav li {
+        list-style: none;
+        margin-left: 20px;
+    }
+
+    header .nav li a{
+        text-decoration: none;
+        color: #fff;
+        font-weight: 400;
+    }
+
+    header .nav li a:hover{
+        color: #ff0157;
+    }
+
+    .sticky{
+        background: #fff;
+        padding: 10px 100px;
+    }
+
+    .sticky .logo {
+        color: #111;
+    }
+    
+    .sticky .nav li a{
+        text-decoration: none;
+        color: #000;
+        font-weight: 400;
+    }
+/* End Header */
+
+/* Banner */
+p{
+    font-weight: 300;
+    color: #111;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/bg.jpg);
+    background-size: cover;
+}
+
+.banner .content{
+    text-align: center;
+    max-width: 900px;
+}
+
+.banner .content h2{
+    font-size: 5em;
+    color:#fff;
+}
+
+.banner .content p{
+    font-size: 1em;
+    color: #fff;
+}
+
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    letter-spacing: 4px;
+}
+/* End Banner */
+
+/* About */
+section{
+    padding: 100px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50{
+    position: relative;
+    width: 49%;
+}
+.titletext{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titletext span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.row .col50 .imgBx{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+}
+
+.row .col50 .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/* End About  */
+
+/* Menu */
+.title {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.menu .content .box{
+    width: 340px;
+    margin: 20px;
+    border: solid 15px #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+
+.menu .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu .content .box .text{
+    padding: 15px 0 5px;
+}
+
+.menu .content .box .text h3{
+    font-weight: 400;
+    color: #111;
+}
+/* end menu */
+
+/* Expert */
+.expert .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.expert .content .box{
+    width: 250px;
+    margin: 15px;
+    border: solid 15px #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+
+.expert .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.expert .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.expert .content .box .text{
+    padding: 15px 0 5px;
+}
+
+.expert .content .box .text h3{
+    font-weight: 400;
+    color: #111;
+}
+/* end expert */
+
+/* Testimonials */
+.test{
+    background: url(./images/bg2.jpg);
+    background-size: cover;
+}
+
+.white .titletext ,
+.white p {
+    color: #fff;
+}
+
+.test .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.test .content .box{
+    width: 340px;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 15px #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+
+
+.test .content .box .imgBx{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.test .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.test .content .box .text{
+    padding: 25px 0 5px;
+    text-align: center;
+}
+
+.test .content .box .text p{
+    font-style: italic;
+    color: #666;
+}
+
+.test .content .box .text h3{
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #ff0157;
+}
+/* end Testimonials */
+
+/* Contact */
+.contact{
+    background: url(./images/bg3.jpg);
+    background-size: cover;
+}
+
+.contactForm {
+    padding: 75px 50px;
+    background-color: #fff;
+    max-width: 500px;
+    margin-top:50px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1)
+}
+
+.contactForm h3{
+    color: #111;
+    font-size: 1.2em ;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color:#111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+/* End Contact */
+
+.copyright{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.copyright p{
+    color: #333;
+}
+
+.copyright a{
+    color:#ff0157;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive */
+
+@media (max-width: 414px) {
+    header .nav{
+        display: none;
+    }
+
+    header .nav.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        background-color: #fff;
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header .nav li{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    header .nav li a{
+        color: #111;
+        font-size: 1.2em;
+    }
+
+    header,
+    header.sticky{
+        padding: 10px 20px;
+    }
+
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(./images/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor:pointer;
+        transition: 0.2s ease;
+    }
+
+    .menuToggle.active{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(./images/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor:pointer;
+    }
+
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+
+    section{
+        padding: 20px;
+    }
+
+    .banner .content h2 {
+        font-size: 3em;
+        color: #fff;
+    }
+    .row{
+        flex-direction: column;
+    }
+
+    .row .col50{
+        position: relative;
+        width: 100%;
+    }
+
+    .row .col50 .imgBx{
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .menu .content{
+        margin-top: 20px;
+    }
+
+    .menu .content .box{
+        margin: 10px;
+    }
+
+    .title p{
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 320px){
+    .content h2 {
+        margin-top: 20px;
+    }
+}
